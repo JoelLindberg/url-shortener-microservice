@@ -6,8 +6,27 @@ Assignment: https://www.freecodecamp.org/learn/back-end-development-and-apis/bac
 
 ## Learning material and self-notes
 
-* \<url here\>
+* https://docs.djangoproject.com/en/4.0/topics/db/models/#using-models
+* https://docs.djangoproject.com/en/4.0/topics/db/queries/
+* https://docs.djangoproject.com/en/4.0/ref/models/
+* https://docs.djangoproject.com/en/4.0/topics/serialization/
+* https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST
+* https://docs.djangoproject.com/en/4.0/ref/request-response/#django.http.HttpRequest.POST
+* https://docs.djangoproject.com/en/4.0/ref/request-response/#django.http.QueryDict
 
 ---
 
-\<Notes here\>
+Temporarily inactivated "django.middleware.csrf.CsrfViewMiddleware" while developing the logic to to pass the assignment due to csrf cooke errors.
+
+Used curl.exe to send POST requests while developing the service.
+
+~~~console
+curl.exe -i -X POST -H 'Content-Type: application/x-www-form-urlencoded' -d 'url=https://www.google.com' 'https://URLShortenerMicroservice.joellindberg.repl.co/api/shorturl'
+~~~
+
+Also alternating using Firefox "Web Developer Tools" by performing a GET request, editing it and changing it to POST, as well as adding necessary headers and post data in the body:
+
+~~~header
+Content-Type: application/x-www-form-urlencoded
+Body: url=https://www.nationalgeographic.com/animals/mammals/facts/bears-grizzly-polar-panda
+~~~
